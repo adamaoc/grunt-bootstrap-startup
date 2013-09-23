@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Effeckt.css</title>
+
+    <meta name="description" content="UI-Less & Performant Transitions & Animations">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="assets/css/demo/demo.autoprefixed.css">
+
+    <!-- Individual module CSS files here -->
+    <!-- Should we combine or not combine? -->
+    <link rel="stylesheet" href="assets/css/effeckt.autoprefixed.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="offscreen-container">
+        <!-- menu here -->
+    </div>
+
+    <div class="content-wrapper">
+      <header class="site-header">
+        <span class="toggle toggle-nav">
+          <div class="fs1 toggle-icon" aria-hidden="true" data-icon=""></div>
+          <span class="toggle-text">Menu</span>
+        </span>
+
+        <h1 class="site-heading">
+          <a href="/"><!-- Dealer Name -->Dealer Name</a>
+        </h1>
+
+        <a href="/dealer/call/" class="toggle toggle-call">
+          <div class="fs1 call-icon" aria-hidden="true" data-icon=""></div>
+          <span class="call-text">Contact</span>
+        </a>
+      </header>
+
+    <div class="effeckt effeckt-demo-buttons group">
+
+  <header>
+    <h2>
+      Buttons
+      <a href="buttons.html">#</a>
+    </h2>
+    <span class="source">
+      Sources:
+      <a href="http://lab.hakim.se/ladda/">
+        Hakim El Hattab
+      </a>
+      /
+      <a href="http://tympanus.net/codrops/2013/06/13/creative-button-styles/">
+        Codrops
+      </a>
+    </span>
+  </header>
+
+  <div class="button-demo-wrap">
+    <button class="effeckt-button" data-effeckt-type="expand-right"><span class="label">Expand Right</span> <span class="spinner"></span></button>
+  </div>
+
+  <div class="button-demo-wrap">
+    <button class="effeckt-button" data-effeckt-type="expand-left"><span class="label">Expand Left</span> <span class="spinner"></span></button>
+  </div>
+
+  <div class="button-demo-wrap">
+    <button class="effeckt-button" data-effeckt-type="expand-up"><span class="label">Expand Up</span> <span class="spinner"></span></button>
+  </div>
+
+  <div class="button-demo-wrap">
+    <button class="effeckt-button" data-effeckt-type="expand-down"><span class="label">Expand Down</span> <span class="spinner"></span></button>
+  </div>
+
+  <div class="button-demo-wrap">
+    <button class="effeckt-button" data-effeckt-type="slide-left"><span class="label">Slide Left</span> <span class="spinner"></span></button>
+  </div>
+
+  <div class="button-demo-wrap">
+    <button class="effeckt-button" data-effeckt-type="slide-right"><span class="label">Slide Right</span> <span class="spinner"></span></button>
+  </div>
+
+  <div class="button-demo-wrap">
+    <button class="effeckt-button" data-effeckt-type="slide-up"><span class="label">Slide Up</span> <span class="spinner"></span></button>
+  </div>
+
+  <div class="button-demo-wrap">
+    <button class="effeckt-button" data-effeckt-type="slide-down"><span class="label">Slide Down</span> <span class="spinner"></span></button>
+  </div>
+
+  <div class="button-demo-wrap">
+    <button class="effeckt-button" data-effeckt-type="zoom-out"><span class="label">Zoom Out</span> <span class="spinner"></span></button>
+  </div>
+
+  <div class="button-demo-wrap">
+    <button class="effeckt-button" data-effeckt-type="zoom-in"><span class="label">Zoom in</span> <span class="spinner"></span></button>
+  </div>
+
+  <div class="button-demo-wrap">
+    <button class="effeckt-button" data-effeckt-type="fill-from-left"><span class="label">Fill from left</span></button>
+  </div>
+
+  <div class="button-demo-wrap">
+    <button class="effeckt-button" data-effeckt-type="fill-from-right"><span class="label">Fill from right</span></button>
+  </div>
+
+  <div class="button-demo-wrap">
+    <button class="effeckt-button" data-effeckt-type="fill-from-top"><span class="label">Fill from top</span></button>
+  </div>
+
+  <div class="button-demo-wrap">
+    <button class="effeckt-button" data-effeckt-type="fill-from-bottom"><span class="label">Fill from bottom</span></button>
+  </div>
+
+  <div class="button-demo-wrap">
+    <button class="effeckt-button" data-effeckt-type="icon-slide from-top">
+      <span class="effeckt-button-label demo-button-icon">Icon from top</span>
+    </button>
+  </div>
+
+  <div class="button-demo-wrap">
+    <button class="effeckt-button" data-effeckt-type="icon-slide from-bottom">
+      <span class="effeckt-button-label demo-button-icon">Icon from bottom</span>
+    </button>
+  </div>
+
+  <div class="button-demo-wrap">
+    <button class="effeckt-button" data-effeckt-type="icon-slide from-left">
+      <span class="effeckt-button-label demo-button-icon">Icon from left</span>
+    </button>
+  </div>
+
+  <div class="button-demo-wrap">
+    <button class="effeckt-button" data-effeckt-type="icon-slide from-right">
+      <span class="effeckt-button-label demo-button-icon">Icon from right</span>
+    </button>
+  </div>
+
+</div>
+ 
+
+
+      <footer class="site-footer">
+        <ul class="footer-links">
+          <li><a href="/ConsumerSiteMap.aspx">Site Map</a></li>
+          <li><a href="/privacy">Privacy and Disclosures</a></li>
+        </ul>
+        <ul class="footer-links footer-copyright">
+          <li>©2013 FordDirect</li>
+        </ul>
+      </footer>
+    </div><!-- off content wrapper -->    
+
+
+  </div><!-- off wrapper -->
+
+
+  <!-- libs -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-2.0.3.min.js"><\/script>')</script>
+
+  <!-- demo -->
+  <script src="assets/js/demo/demo.js"></script>
+
+  <!-- Individual module JS files here -->
+  <!-- Should we combine or not combine? -->
+  <!-- Should we provide minified versions? -->
+  <script src="assets/js/modules/modals.js"></script>
+  <script src="assets/js/modules/buttons.js"></script>
+  <script src="assets/js/modules/list-items.js"></script>
+  <script src="assets/js/modules/off-screen-nav.js"></script>
+  <script src="assets/js/modules/page-transitions.js"></script>
+  <script src="assets/js/modules/list-scroll.js"></script>
+  <script src="assets/js/modules/tabs.js"></script>
+
+  <!-- ideally should kick this off in the demo js file itself -->
+  <script>
+    stroll.bind('.effeckt-demo-list-scroll ul');
+  </script>
+
+</body>
+
+</html>
