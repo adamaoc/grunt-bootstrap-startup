@@ -61,6 +61,14 @@ module.exports = function(grunt) {
         layoutdir: 'src/templates/layouts',
         assets: 'dist/assets',
         partials: ['src/templates/pages/*.hbs', 'src/templates/parts/*.hbs']
+      },
+      demo: {
+        options: {
+          data: ['src/data/*.{json,yml}']
+        },
+        files: {
+          'dist/': ['src/templates/pages/*.hbs']
+        }
       }
     },
 
