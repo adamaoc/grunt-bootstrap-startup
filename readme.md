@@ -8,7 +8,7 @@ Getting Started
 * Run `npm install` to install all the required node modules.
 * Run `grunt default` to set your files setup.
 * Run `grunt dev` to start your server and see they base site!
-    + This will be running at [localhost:8000](localhost:8000) by default.
+    + This will be running at [localhost:8000](http://localhost:8000) by default.
 
 Editing Files
 -------------
