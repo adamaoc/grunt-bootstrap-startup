@@ -30,36 +30,18 @@ module.exports = function(grunt) {
 
     sass: {
       build: {
-        files: [
+        files : [
           {
-            src: ['**/*.scss', '!**/_*.scss'],
-            cwd: 'scss',
-            dest: 'css',
-            ext: '.css',
-            expand: true
-          }
-        ],
-        options: {
-          style: 'expanded'
-        }
-      }
-    },
-
-    // https://github.com/nDmitry/grunt-autoprefixer
-    autoprefixer: {
-      build: {
-        options: {
-          browsers: ['last 2 versions', '> 1%']
-        },
-        files: [
-          {
-            src : ['**/*.css', '!**/*autoprefixed.css'],
-            cwd : 'css',
+            src : ['**/*.scss', '!**/_*.scss'],
+            cwd : 'scss',
             dest : 'css',
-            ext : '.autoprefixed.css',
+            ext : '.css',
             expand : true
           }
-        ]
+        ],
+        options : {
+          style : 'expanded'
+        }
       }
     },
 
@@ -79,24 +61,10 @@ module.exports = function(grunt) {
         layoutdir: 'src/templates/layouts',
         assets: 'dist/assets',
         partials: ['src/templates/pages/*.hbs', 'src/templates/parts/*.hbs']
-      },
-      demo: {
-        options: {
-          data: ['src/data/*.{json,yml}']
-        },
-        files: {
-          'dist/': ['src/templates/pages/*.hbs']
-        }
       }
     },
 
     copy: {
-      demo: {
-        files: [
-          { expand: true, cwd: './css', src: ['./**/*.*'], dest: 'dist/assets/css' },
-          { expand: true, cwd: './js', src: ['./**/*.*'], dest: 'dist/assets/js' }
-        ]
-      },
       css: {
         files: [
           { expand: true, cwd: './css', src: ['./**/*.*'], dest: 'dist/assets/css' }
